@@ -6,6 +6,7 @@
 */
 {
   "files": [],
+  "esModuleInterop": true,
   "references": [
     {
       "path": "./tsconfig.app.json"

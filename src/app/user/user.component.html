@@ -1,0 +1,6 @@
+<div>
+    <label>Please Enter Your Name:</label>
+</div>
+<input [(ngModel)] = "name">
+<button (click) = "showTitle = true">Submit</button>
+<div *ngIf="showTitle">Thanks {{name}}</div>

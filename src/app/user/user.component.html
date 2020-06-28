@@ -1,10 +1,10 @@
 <mat-card>
     <mat-form-field appearance="outline">
         <mat-label>What's your name?</mat-label>
-        <input matInput type="text" [(ngModel)] = "name">
+        <input matInput type="text" (input)= "showTitle = false" [(ngModel)] = "name">
     </mat-form-field>
     <div>
-        <button mat-flat-button color="primary" class="padding-top-15"(click) = "showTitle = true">Submit</button>
+        <button mat-flat-button color="primary" class="padding-top-15" (click)= "showTitle = true">Submit</button>
     </div>
     <div class="padding-top-15" *ngIf="showTitle">
         <mat-divider></mat-divider>

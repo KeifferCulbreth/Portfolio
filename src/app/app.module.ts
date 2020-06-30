@@ -20,11 +20,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component';
 import { AboutAccordianComponent } from './about-accordian/about-accordian.component';
+import { ProjectsContentComponent } from './projects-content/projects-content.component';
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
-    AboutAccordianComponent
+    AboutAccordianComponent,
+    ProjectsContentComponent
   ],
   imports: [
     BrowserModule,

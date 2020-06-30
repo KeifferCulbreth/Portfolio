@@ -8,8 +8,8 @@
         <div id="attribute3" class="padding-top-15"></div>
     </div>
     <div *ngIf="show" class="bottom center" (click)="scroll(bottom)"><div>See more about me</div><mat-icon>code</mat-icon></div>
-    <div *ngIf="show" class="bellow">
-        <about-accordian (click)="scroll(bottom)"></about-accordian>
+    <div *ngIf="show" (click)="scroll(bottom)" class="bellow">
+        <about-accordian ></about-accordian>
     </div>
     <div class="bellow" #bottom></div>
 </div>

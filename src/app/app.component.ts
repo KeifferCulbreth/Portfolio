@@ -67,6 +67,6 @@ export class AppComponent implements OnInit{
   scroll(el: HTMLElement) {
     setTimeout(()=>{
       el.scrollIntoView({behavior: 'smooth'});
-    }, 150)
+    }, 250)
   }
 }

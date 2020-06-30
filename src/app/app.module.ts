@@ -11,15 +11,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatListModule } from '@angular/material/list';
+import { MatGridListModule } from '@angular/material/grid-list';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatChipsModule } from '@angular/material/chips';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component';
+import { AboutAccordianComponent } from './about-accordian/about-accordian.component';
 @NgModule({
   declarations: [
     AppComponent,
-    UserComponent
+    UserComponent,
+    AboutAccordianComponent
   ],
   imports: [
     BrowserModule,
@@ -34,6 +39,9 @@ import { UserComponent } from './user/user.component';
     MatDividerModule,
     MatDialogModule,
     MatExpansionModule,
+    MatListModule,
+    MatGridListModule,
+    MatChipsModule,
     MatInputModule
   ],
   providers: [],

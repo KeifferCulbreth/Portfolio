@@ -20,6 +20,7 @@ export class AppComponent implements OnInit{
   ngOnInit(): void {
     this.openDialog()
   }
+
   openDialog() {
     window.scrollTo(0, 0);
     this.dialogRef = this.dialog.open(UserComponent, {
@@ -66,7 +67,6 @@ export class AppComponent implements OnInit{
   scroll(el: HTMLElement) {
     setTimeout(()=>{
       el.scrollIntoView({behavior: 'smooth'});
-    }, 40)
+    }, 150)
   }
- 
 }

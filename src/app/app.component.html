@@ -1,1 +1,57 @@
-<app-user></app-user>
+<div class="center-text">
+    <img src="../assets/img/background.jpg" class="background">
+    <div class="centered type-box">
+        <div id="nameIntro" class="large"></div>
+        <div id="myName" class="padding-top-15 "></div>
+        <div id="attribute1" class="padding-top-15 "></div>
+        <div id="attribute2" class="padding-top-15"></div>
+        <div id="attribute3" class="padding-top-15"></div>
+    </div>
+    <div *ngIf="show" class="bottom center" (click)="scroll(bottom)"><div>See more about me</div><mat-icon>code</mat-icon></div>
+    <div class="bellow" #bottom></div>
+    <div *ngIf="show" class="bellow">
+        <mat-accordion #acc>
+            <mat-expansion-panel >
+                <mat-expansion-panel-header>
+                   <mat-panel-title (click)="scroll(acc)" class="medium-title">
+                    My Philosophy
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div>Don't be an idiot</div>
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                   <mat-panel-title  class="medium-title">
+                    Projects
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div>All of them</div>
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                   <mat-panel-title class="medium-title">
+                    Work History
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div>not too much</div>
+            </mat-expansion-panel>
+            <mat-expansion-panel >
+                <mat-expansion-panel-header>
+                   <mat-panel-title class="medium-title">
+                    Certifications
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div>Yeah good try</div>
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                   <mat-panel-title  class="medium-title">
+                    More About Me
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div>I like food a lot</div>
+            </mat-expansion-panel>
+        </mat-accordion>
+    </div>
+</div>
+

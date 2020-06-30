@@ -56,7 +56,6 @@ export class AppComponent implements OnInit{
   }
 
   typeWriter(text,id,i) {
-    console.log({text,id})
     if(i < text.length) {
         document.getElementById(id).innerHTML += text.charAt(i)
         i++

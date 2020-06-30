@@ -13,7 +13,6 @@ export class UserComponent implements OnInit {
   ngOnInit(): void {
   }
   closeDialog() {
-    console.log(this.data)
     this.dialogRef.close(this.data)
   }
 }

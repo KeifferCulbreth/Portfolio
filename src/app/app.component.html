@@ -10,46 +10,46 @@
     <div *ngIf="show" class="bottom center" (click)="scroll(bottom)"><div>See more about me</div><mat-icon>code</mat-icon></div>
     <div class="bellow" #bottom></div>
     <div *ngIf="show" class="bellow">
-        <mat-accordion #acc>
+        <mat-accordion>
             <mat-expansion-panel >
                 <mat-expansion-panel-header>
-                   <mat-panel-title (click)="scroll(acc)" class="medium-title">
+                   <mat-panel-title (click)="scroll(acc1)" class="medium-title">
                     My Philosophy
                   </mat-panel-title>
                 </mat-expansion-panel-header>
-                <div>Don't be an idiot</div>
+                <div #acc1>Don't be an idiot</div>
             </mat-expansion-panel>
             <mat-expansion-panel>
                 <mat-expansion-panel-header>
-                   <mat-panel-title  class="medium-title">
+                   <mat-panel-title (click)="scroll(acc2)" class="medium-title">
                     Projects
                   </mat-panel-title>
                 </mat-expansion-panel-header>
-                <div>All of them</div>
+                <div #acc2 >All of them</div>
             </mat-expansion-panel>
             <mat-expansion-panel>
                 <mat-expansion-panel-header>
-                   <mat-panel-title class="medium-title">
+                   <mat-panel-title (click)="scroll(acc3)" class="medium-title">
                     Work History
                   </mat-panel-title>
                 </mat-expansion-panel-header>
-                <div>not too much</div>
-            </mat-expansion-panel>
-            <mat-expansion-panel >
-                <mat-expansion-panel-header>
-                   <mat-panel-title class="medium-title">
-                    Certifications
-                  </mat-panel-title>
-                </mat-expansion-panel-header>
-                <div>Yeah good try</div>
+                <div #acc3>not too much</div>
             </mat-expansion-panel>
             <mat-expansion-panel>
                 <mat-expansion-panel-header>
-                   <mat-panel-title  class="medium-title">
+                   <mat-panel-title (click)="scroll(acc4)" class="medium-title">
+                    Certifications
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div #acc4>Yeah good try</div>
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                   <mat-panel-title (click)="scroll(acc5)" class="medium-title">
                     More About Me
                   </mat-panel-title>
                 </mat-expansion-panel-header>
-                <div>I like food a lot</div>
+                <div #acc5>I like food a lot</div>
             </mat-expansion-panel>
         </mat-accordion>
     </div>

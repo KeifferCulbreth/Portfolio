@@ -29,17 +29,27 @@ export class AppComponent implements OnInit{
       data: {name: this.name}
     })
     this.dialogRef.afterClosed().subscribe(result => {
-      this.name = result.name[0].toUpperCase() + result.name.slice(1);
+      window.scrollTo(0, 0);
+      if(!!result.name) {
+        this.name = result.name[0].toUpperCase() + result.name.slice(1);
+      }
       this.handleTypingIntro();
     })
   }
 
   handleTypingIntro() {
-    let greeting = ' Hey ' + this.name + '! '
-    let basetime = this.getTypeTime(greeting);
-    window.scrollTo(0, 0);
-    this.typeWriter(greeting, 'nameIntro', 0)
-    basetime = this.handleNewSentence(this.name.toLowerCase().trim()==='keiffer'? ' My name is also Keiffer ':' My name is Keiffer ', 'myName',basetime)
+    let greeting;
+    let basetime;
+    if(this.name) {
+      greeting = ' Hey ' + this.name + '! '
+      basetime = this.getTypeTime(greeting);
+      this.typeWriter(greeting, 'nameIntro', 0)
+    } else {
+      greeting = 'I see you like privacy'
+      basetime = this.getTypeTime(greeting);
+      this.typeWriter(greeting, 'nameIntro', 0)
+    }
+    basetime = this.handleNewSentence(!!this.name && this.name.toLowerCase().trim()==='keiffer'? ' My name is also Keiffer ':' My name is Keiffer ', 'myName',basetime)
     basetime = this.handleNewSentence('- Self Starter -', 'attribute1',basetime)
     basetime = this.handleNewSentence('- Problem Solver -', 'attribute2',basetime)
     basetime = this.handleNewSentence('- Innovator -', 'attribute3',basetime)

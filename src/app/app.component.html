@@ -1,15 +1,16 @@
-<div class="center-text">
-    <img src="../assets/img/background.jpg" class="background">
-    <div class="centered type-box">
-        <div id="nameIntro" class="large"></div>
-        <div id="myName" class="padding-top-15 "></div>
-        <div id="attribute1" class="padding-top-15 "></div>
-        <div id="attribute2" class="padding-top-15"></div>
-        <div id="attribute3" class="padding-top-15"></div>
-    </div>
-    <div *ngIf="show" class="bottom center" (click)="scroll(bottom)"><div>See more about me</div><mat-icon>code</mat-icon></div>
-    <div *ngIf="show" (click)="scroll(bottom)" class="bellow">
-        <about-accordian ></about-accordian>
+<div >
+    <div>
+        <div class="type-box">
+            <div id="nameIntro" class="large"></div>
+            <div id="myName" class="padding-top-15 center-text"></div>
+            <div id="attribute1" class="padding-top-15 center-text"></div>
+            <div id="attribute2" class="padding-top-15 center-text"></div>
+            <div id="attribute3" class="padding-top-15 center-text"></div>
+        </div>
+        <div *ngIf="show" class="bottom padding-top-15" (click)="scroll(bottom)"><div>See more about me </div><mat-icon>code</mat-icon></div>
+        <div *ngIf="show" (click)="scroll(bottom)" class="bellow">
+            <about-accordian ></about-accordian>
+        </div>
     </div>
     <div #bottom class="inv-bottom"></div>
 </div>

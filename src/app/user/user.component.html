@@ -1,8 +1,10 @@
 <div class="medium-title">Thanks for visiting my site!</div>
-<mat-form-field class="padding-top-15" appearance="outline">
-    <mat-label>Whats your name?</mat-label>
-    <input tabindex="-1" matInput type="text" [(ngModel)]="data.name" autocomplete="off">
-</mat-form-field>
-<div >
+<div class="center">
+    <mat-form-field class="padding-top-15 center-no-flex" appearance="outline">
+        <mat-label>Whats your name?</mat-label>
+        <input  matInput type="text" [(ngModel)]="data.name" autocomplete="off">
+    </mat-form-field>
+</div>
+<div class="center">
     <button mat-flat-button color="primary" (click)="closeDialog()">Show Site</button>
 </div>

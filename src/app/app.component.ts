@@ -50,9 +50,9 @@ export class AppComponent implements OnInit{
       this.typeWriter(greeting, 'nameIntro', 0)
     }
     basetime = this.handleNewSentence(!!this.name && this.name.toLowerCase().trim()==='keiffer'? ' My name is also Keiffer ':' My name is Keiffer ', 'myName',basetime)
-    basetime = this.handleNewSentence('- Self Starter -', 'attribute1',basetime)
-    basetime = this.handleNewSentence('- Problem Solver -', 'attribute2',basetime)
-    basetime = this.handleNewSentence('- Innovator -', 'attribute3',basetime)
+    basetime = this.handleNewSentence('<Self Starter/>', 'attribute1',basetime)
+    basetime = this.handleNewSentence('<Problem Solver/>', 'attribute2',basetime)
+    basetime = this.handleNewSentence('<Innovator/>', 'attribute3',basetime)
     setTimeout(()=>{this.show = true},basetime);
   }
 

@@ -1,5 +1,13 @@
-@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import '~@angular/material/theming';
+@include mat-core();
 @import '~material-design-icons/iconfont/material-icons.css';
+
+$my-app-primary: mat-palette($mat-gray,800);
+$my-app-accent:  mat-palette($mat-gray,200);
+$my-app-warn:    mat-palette($mat-deep-orange);
+$my-app-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn);
+@include angular-material-theme($my-app-theme);
+
 html, body { height: 100%;
     background: url(assets/img/background.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
@@ -15,12 +23,13 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     padding-top: 15px;
 }
 
+.center-no-flex{
+    text-align: center !important;
+}
 .center {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 500px;
-    border: 3px solid green;
   }
 
 
@@ -36,31 +45,37 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     padding-bottom: 15px;
 }
 
+.margin-left-5 {
+    margin-left: 5;
+}
+
 .medium-title {
     margin-left: 5px;
     font-size: larger;
     font-weight: 450;
-    color: #673ab7;
+    color: #424242;
 }
 
 .small-title {
     margin-left: 5px;
     font-size: medium;
     font-weight:450;
-    color: #673ab7;
+
 }
 
 .tiny-title {
     margin-left: 5px;
     font-size: small;
     font-weight: 450;
-    color: #673ab7;
 }
 
 .primary {
-    color: #673ab7;
+    color: #4f87b6;
 }
 
+.secondary{
+    color: #424242;
+}
 
 .background {
     height: 100%;

@@ -15,18 +15,20 @@ import { MatListModule } from '@angular/material/list';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatChipsModule } from '@angular/material/chips';
-
+import { MatTabsModule } from '@angular/material/tabs';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component';
 import { AboutAccordianComponent } from './about-accordian/about-accordian.component';
 import { ProjectsContentComponent } from './projects-content/projects-content.component';
+import { WorkHistoryComponent } from './work-history/work-history.component';
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
     AboutAccordianComponent,
-    ProjectsContentComponent
+    ProjectsContentComponent,
+    WorkHistoryComponent
   ],
   imports: [
     BrowserModule,
@@ -36,11 +38,10 @@ import { ProjectsContentComponent } from './projects-content/projects-content.co
     MatButtonModule,
     MatCardModule,
     MatIconModule,
-    MatMenuModule,
-    MatToolbarModule,
     MatDividerModule,
-    MatDialogModule,
     MatExpansionModule,
+    MatDialogModule,
+    MatTabsModule,
     MatListModule,
     MatGridListModule,
     MatChipsModule,

@@ -22,13 +22,15 @@ import { UserComponent } from './user/user.component';
 import { AboutAccordianComponent } from './about-accordian/about-accordian.component';
 import { ProjectsContentComponent } from './projects-content/projects-content.component';
 import { WorkHistoryComponent } from './work-history/work-history.component';
+import { CertificationsComponent } from './certifications/certifications.component';
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
     AboutAccordianComponent,
     ProjectsContentComponent,
-    WorkHistoryComponent
+    WorkHistoryComponent,
+    CertificationsComponent
   ],
   imports: [
     BrowserModule,

@@ -26,6 +26,16 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .center-no-flex{
     text-align: center !important;
 }
+
+.no-underline{
+    text-decoration: none;
+}
+
+.size{
+    height:auto;
+    width:auto;
+}
+
 .center {
     display: flex;
     justify-content: center;

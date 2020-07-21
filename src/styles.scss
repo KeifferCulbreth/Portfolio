@@ -19,9 +19,9 @@ html, body { height: 100%;
 
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-@media (max-width: 767px) {                  
+@media (max-width: 1200px) {                  
     .hidden-sm {
-       display: none;
+       display: none !important;
     }
  }
 
@@ -49,7 +49,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 
 .scale {
-    font-size: 80%;
+    font-size: 2vw;
 }
 
 .center {

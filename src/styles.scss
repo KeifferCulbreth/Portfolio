@@ -19,9 +19,11 @@ html, body { height: 100%;
 
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-.padding-top-15 {
-    padding-top: 15px;
-}
+@media (max-width: 767px) {                  
+    .hidden-sm {
+       display: none;
+    }
+ }
 
 .center-no-flex{
     text-align: center !important;
@@ -31,9 +33,23 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     text-decoration: none;
 }
 
-.size{
-    height:auto;
-    width:auto;
+.half {
+    max-width:75%;
+    max-height:75%;
+}
+
+.full {
+    max-width:100%;
+    max-height:100%;
+}
+
+.icon {
+    max-width:25%;
+    max-height:25%;
+}
+
+.scale {
+    font-size: 80%;
 }
 
 .center {
@@ -42,6 +58,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     align-items: center;
   }
 
+  .padding-top-15 {
+    padding-top: 15px;
+}
 
 .padding-top-5 {
     padding-top: 5px;
@@ -56,7 +75,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 
 .margin-left-5 {
-    margin-left: 5;
+    margin-left: 5px;
+}
+
+.margin-top-5 {
+    margin-top: 5px;
 }
 
 .medium-title {

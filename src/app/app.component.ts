@@ -13,7 +13,7 @@ export class AppComponent implements OnInit{
   name;
   show; 
   dialogRef;
-  typingSpeed = 75;
+  typingSpeed = 50;
   constructor(public dialog: MatDialog) {
     
   }

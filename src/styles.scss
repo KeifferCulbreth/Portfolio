@@ -59,6 +59,13 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .scale-multi {
     font-size: 1.5vw;
+    padding-bottom: 10px;
+    @media (max-width: 546px) {  
+        padding-bottom: 0px;
+    }
+     @media (min-width: 1056px) {  
+        padding-bottom: 15px;
+    }
 }
 
 .center {
@@ -68,6 +75,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .align-center {
     justify-content: center;
+}
+
+.block {
+        display: block !important;
 }
 
   .padding-top-15 {
